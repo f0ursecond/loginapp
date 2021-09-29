@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/ic_person"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alif Zulfanur"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLogo"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginCuy"
+
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="     Nyerah aja gak usah semangat "
+
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalau anda bisa kenapa harus saya? "
+
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loginCuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLogo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="90dp"
+
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:hint="main hp aja gk usah belajar"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="karna main hp adalah passion anda"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:hapticFeedbackEnabled="true"
+            android:text="Coba Pencet"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
