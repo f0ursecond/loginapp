@@ -67,6 +67,16 @@
                 android:textColor="@color/black"
                 android:textStyle="italic"
                 android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:paddingTop="20dp"
+                android:text="Design by Alif Zulfanur"
+                />
         </LinearLayout>
     <LinearLayout
         android:id="@+id/loginCuy"
@@ -85,7 +95,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            
+
             android:hint="main hp aja gk usah belajar"
             android:layout_gravity="center_horizontal"
             android:fontFamily="sans-serif-black"
@@ -112,11 +122,21 @@
             android:backgroundTint="@color/blue"
             android:hapticFeedbackEnabled="true"
             android:text="Coba Pencet"
-
+            android:textColor="#FFFF"
             />
 
-
-
+        <Button
+            android:id="@+id/btn_pencet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:text="Login"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+            android:hapticFeedbackEnabled="true"
+            android:fontFamily="sans-serif"
+            />
 
     </LinearLayout>
 
