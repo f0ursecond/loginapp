@@ -43,9 +43,18 @@ public class MainActivity3 extends AppCompatActivity {
                     Toast.makeText(MainActivity3.this,"Login Succses",Toast.LENGTH_SHORT).show();
                     Intent login = new Intent(MainActivity3.this, MainActivity5.class);
                     startActivity(login);
-                }else {
+                } else if (emailbang.getText().toString().equals("") && pwBang.getText().toString().equals("")){
+                    //Error
+                    Toast.makeText(MainActivity3.this,"Enter Username & Password",Toast.LENGTH_LONG).show();
+                } else if (emailbang.getText().toString().equals("azulfanur") && pwBang.getText().toString().equals("")) {
+                    //Username Only
+                    Toast.makeText(MainActivity3.this,"Enter your Password",Toast.LENGTH_LONG).show();
+                } else if (emailbang.getText().toString().equals("") && pwBang.getText().toString().equals("root")) {
+                    //Password Only
+                    Toast.makeText(MainActivity3.this,"Enter your Username",Toast.LENGTH_SHORT).show();
+                } else {
                     //Incorrect
-                    Toast.makeText(MainActivity3.this,"Password Incorrect",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity3.this,"Password & Username Incorrect",Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -33,4 +33,112 @@
         android:textSize="29dp"
         />
 
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="290dp"
+            android:background="@drawable/form"
+            android:layout_gravity="center_horizontal"
+            android:hint="Insert Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/alatsi_regular"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            android:inputType="textEmailAddress"
+            />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="390dp"
+            android:background="@drawable/form"
+            android:layout_gravity="center_horizontal"
+            android:hint="Create Username"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/alatsi_regular"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/form"
+            android:layout_gravity="center_horizontal"
+            android:hint="Create Password"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/alatsi_regular"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle"
+            android:text="Sign Up"
+            android:hapticFeedbackEnabled="true"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
